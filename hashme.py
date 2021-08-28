@@ -93,6 +93,12 @@ def menu():
         hexa()
     if choice == "11":
         reverse()
+    if choice == "":
+	menu()
+    else:
+	print("\033[37m  [\033[31m+\033[37m] WRONG CHOICE")
+	sleep(2)
+	menu()
 
 ########################### MD5 ###########################
 
