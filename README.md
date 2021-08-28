@@ -12,9 +12,9 @@
 </p>
 <br>
 
-# HASHME is a python based script to encode & decode desired  hashtags . 
+# <img src="https://img.icons8.com/fluency/48/000000/hashtag.png"/> HASHME is a python based script to encode & decode desired  hashtags . <img src="https://img.icons8.com/fluency/48/000000/hashtag.png"/>
 
-## FEATURES : 
+## FEATURES : <img src="https://img.icons8.com/fluency/48/000000/hashtag.png"/>
 
 * Encode MD5
 * Encode SHA1
@@ -28,7 +28,7 @@
 * Encode|Decode HEXADECIMAL
 * Encode|Decode REVERSE
 
-## TESTED PLATFORMS : 
+## TESTED PLATFORMS : <img src="https://img.icons8.com/fluency/48/000000/hashtag.png"/>
 
 * Kali Linux
 * Parrot os 
@@ -36,9 +36,11 @@
 * Termux
 
 <br>
-
+<p align="center">
+<img src="https://img.icons8.com/emoji/200/000000/keycap-number-sign-emoji.png"/>
+  
 ```
-INSTALLATION :
+INSTALLATION : (Linux/Win)
 
 git clone https://github.com/isuruwa/HASHME
 cd HASHME
@@ -47,7 +49,7 @@ python3 hashme.py
 
 ```
 
-## SCREENSHOTS : 
+## SCREENSHOTS : <img src="https://img.icons8.com/fluency/48/000000/hashtag.png"/>
 
 ![kali](https://user-images.githubusercontent.com/72663288/131219673-1a6c5db4-ba17-41af-9cf5-7a5e2a670360.PNG)
 
