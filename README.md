@@ -35,6 +35,8 @@
 * Windows
 * Termux
 
+<br>
+
 ```
 INSTALLATION :
 
