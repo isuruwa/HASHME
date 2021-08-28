@@ -48,3 +48,15 @@ python3 hashme.py
 ```
 
 ## SCREENSHOTS : 
+
+![kali](https://user-images.githubusercontent.com/72663288/131219673-1a6c5db4-ba17-41af-9cf5-7a5e2a670360.PNG)
+
+![termux1](https://user-images.githubusercontent.com/72663288/131219704-d699ecc3-c03d-49e2-a9dc-4cbd771338ad.jpg)
+
+![termux2](https://user-images.githubusercontent.com/72663288/131219709-0a14c6d5-9ed0-4fd7-8a50-36414aed10b3.jpg)
+
+![parot](https://user-images.githubusercontent.com/72663288/131219675-975bd2d6-2324-49aa-9c2b-d56ba38d48b9.PNG)
+
+![win](https://user-images.githubusercontent.com/72663288/131219676-7118344f-0a4f-4b7b-8faa-3ae976ae357c.PNG)
+
+
