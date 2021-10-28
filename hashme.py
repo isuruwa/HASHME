@@ -12,7 +12,7 @@ import sys
 from platform import python_version
 from art import *
 from os import system, name
-from Crypto.Hash import MD2
+from Crypto.Hash import MD2, MD4
 
 ########################### BEGIN ###########################
 def author():
