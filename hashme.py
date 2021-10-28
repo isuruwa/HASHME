@@ -3,7 +3,7 @@
 #AUTHOR : DEVIL MASTER
 
 import hashlib
-from base64 import b64encode, b64decode
+from base64 import *
 import codecs
 import binascii
 import re
