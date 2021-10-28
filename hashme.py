@@ -13,10 +13,8 @@ from platform import python_version
 from art import *
 from os import system, name
 from Crypto.Hash import MD2
-import pycryptodome
 
 ########################### BEGIN ###########################
-
 def author():
 	print("   \033[37m[\033[31m|\033[37m]|------------------------------------------------|\033[37m[\033[31m|\033[37m]")
 	print("   \033[37m[\033[31m|\033[37m]|          DEVELOPED BY DEVIL MASTER             |\033[37m[\033[31m|\033[37m]")
@@ -39,13 +37,11 @@ def clear():
     else:
         _ = system('clear')
 
-
 def banner(topic):
     clear()
     print("\033[1;32m")
     tprint(topic)
     author()
-
 
 def re(reb, again):
 	rec = input(reb)
@@ -57,7 +53,6 @@ def re(reb, again):
 		re(reb,again)
 
 ########################### MENU ###########################
-
 def menu():
     banner("""       HASHME\n""")
     print("\033[35m  [\033[37m1\033[35m]\033[37m  ENCODE MD2")
@@ -69,16 +64,13 @@ def menu():
     print("\033[35m  [\033[37m7\033[35m]\033[37m  ENCODE SHA384")
     print("\033[35m  [\033[37m8\033[35m]\033[1;32m  ENCODE SHA512")
     print("\033[35m  [\033[37m9\033[35m]\033[37m  ENCODE SHA3-224")
-    print("\033[35m  [\033[37m10\033[35m]\033[36m  ENCODE SHA3-256")
-    print("\033[35m  [\033[37m11\033[35m]\033[37m  ENCODE SHA3-512")
-    print("\033[35m  [\033[37m12\033[35m]\033[37m  ENCODE|DECODE BASE32")
-    print("\033[35m  [\033[37m13\033[35m]\033[31m  ENCODE|DECODE BASE58")
-    print("\033[35m  [\033[37m14\033[35m]\033[31m  ENCODE|DECODE BASE64")
-    print("\033[35m  [\033[37m15\033[35m]\033[35m  ENCODE|DECODE BINARY")
-    print("\033[35m  [\033[37m16\033[35m]\033[36m  ENCODE|DECODE CIPHER OF CESAR")
-    print("\033[35m  [\033[37m17\033[35m]\033[31m  ENCODE|DECODE HEXADECIMAL")
-    print("\033[35m  [\033[37m18\033[35m]\033[1;32m  ENCODE|DECODE REVERSE\n")
-
+    print("\033[35m  [\033[37m10\033[35m]\033[36m ENCODE SHA3-256")
+    print("\033[35m  [\033[37m11\033[35m]\033[37m ENCODE SHA3-512")
+    print("\033[35m  [\033[37m12\033[35m]\033[31m ENCODE|DECODE BASE64")
+    print("\033[35m  [\033[37m13\033[35m]\033[35m ENCODE|DECODE BINARY")
+    print("\033[35m  [\033[37m14\033[35m]\033[36m ENCODE|DECODE CIPHER OF CESAR")
+    print("\033[35m  [\033[37m15\033[35m]\033[31m ENCODE|DECODE HEXADECIMAL")
+    print("\033[35m  [\033[37m16\033[35m]\033[1;32m ENCODE|DECODE REVERSE\n")
     choice = input("\033[37m  [\033[31m+\033[37m] Enter Choice : ")
     if choice == "1" or choice == "01":
       md2()
@@ -103,18 +95,14 @@ def menu():
     elif choice == "11":
       sha3512()
     elif choice == "12":
-      base32()
-    elif choice == "13":
-      base58()
-    elif choice == "14":
       base64()
-    elif choice == "15":
+    elif choice == "13":
         binary()
-    elif choice == "16":
+    elif choice == "14":
         coc()
-    elif choice == "17":
+    elif choice == "15":
         hexa()
-    elif choice == "18":
+    elif choice == "16":
         reverse()
     elif choice == "":
         menu()
@@ -124,7 +112,6 @@ def menu():
       menu()
 
 ########################### MD5 ###########################
-
 def md5():
     banner("""MD5""")
     text = input("\033[1;32m [+] Text To Encrypt In MD5 : ")
@@ -136,7 +123,6 @@ def md5():
 
 
 ########################### SHA1 ###########################
-
 def sha1():
     banner("""SHA1""")
     text = input("\033[1;32m [+] Text To Encrypt In SHA1 : ")
@@ -147,7 +133,6 @@ def sha1():
     re("\033[31m [+] Do a another encode (y/n) ? ", sha1)
 
 ########################### SHA224 ###########################
-
 def sha224():
     banner("""SHA224""")
     text = input("\033[1;32m [+] Text To Encrypt In SHA224 : ")
@@ -159,7 +144,6 @@ def sha224():
     
 
 ########################### SHA256 ###########################
-
 def sha256():
     banner("""SHA256""")
     text = input("\033[1;32m [+] Text To Encrypt In SHA256 : ")
@@ -171,7 +155,6 @@ def sha256():
     
 
 ########################### SHA384 ###########################
-
 def sha384():
     banner("""SHA384""")
     text = input("\033[1;32m [+] Text To Encrypt In SHA384 : ")
@@ -194,7 +177,6 @@ def sha512():
     re("\033[31m [+] Do a another encode (y/n) ? ", sha512)
 
 ########################### BASE64 ###########################
-
 def base64():
     banner("""BASE64""")
     print("\033[1;32m [+] Choose a Option : \n")
@@ -208,7 +190,6 @@ def base64():
     else:
         base64()
 
-
 def base64encode():
     banner("""BASE64""")
     text = input("\033[1;32m [+] Text To  BASE64 : ")
@@ -218,7 +199,6 @@ def base64encode():
     print("\033[1;32m [+] Result : " + b64d)
     print("\n")
     re("\033[31m [+] Do a another encode (y/n) ? ", base64encode)
-
 
 def base64decode():
     banner("""BASE64""")
@@ -234,11 +214,8 @@ def base64decode():
         print("\n")
         time.sleep(2)
         base64decode()
-        
 
 ########################### BINARY ###########################
-
-
 def binary():
     banner("""BINARY""")
     print("\033[1;32m [+] Choose a Option : \n")
@@ -252,12 +229,10 @@ def binary():
     else:
         binary()
 
-
 def int2bytes(i):
     hex_string = '%x' % i
     n = len(hex_string)
     return binascii.unhexlify(hex_string.zfill(n + (n & 1)))
-
 
 def binarydecode(encoding='utf-8', errors='surrogatepass'):
     banner("""BINARY""")
@@ -275,7 +250,6 @@ def binarydecode(encoding='utf-8', errors='surrogatepass'):
         sleep(2)
         binarydecode()
 
-
 def binaryencode(encoding='utf-8', errors='surrogatepass'):
     banner("""BINARY""")
     try:
@@ -291,11 +265,8 @@ def binaryencode(encoding='utf-8', errors='surrogatepass'):
         print("\n")
         sleep(2)
         binaryencode()
-
         
 ########################### HEXADECIMAL ###########################
-
-
 def hexa():
     banner("""HEXADECIMAL""")
     print("\033[1;32m [+] Choose a Option : \n")
@@ -306,7 +277,6 @@ def hexa():
         hexaencode()
     if option == "2" or option == "02":
         hexadecode()
-
 
 def hexaencode():
     text = input("\033[1;32m [+] TEXT TO HEXADECIMAL")
@@ -319,7 +289,6 @@ def hexaencode():
     print("\033[1;32m [+] Result : " + encode)
     print("\n")
     re("\033[31m [+] Do a another encode (y/n) ? ", hexaencode)
-
 
 def hexadecode():
     try:
@@ -335,10 +304,8 @@ def hexadecode():
         print("\n")
         sleep(2)
         hexadecode()
-
         
 ########################### CIPHER OF CESAR ###########################
-
 def coc():
     banner("""CIPHER OF CESAR""")
     print("\033[1;32m [+] Choose a Option : \n")
@@ -349,7 +316,6 @@ def coc():
         cocencode()
     if option == "2" or option == "02":
         cocdecode()
-
 
 def cifrar(palavras, chave):
     abc = "abcdefghijklmnopqrstuvwxyz "
@@ -362,7 +328,6 @@ def cifrar(palavras, chave):
 
     return text_cifrado
 
-
 def decifrar(palavras, chave):
     abc = "abcdefghijklmnopqrstuvwxyz "
     text_cifrado = ''
@@ -373,7 +338,6 @@ def decifrar(palavras, chave):
         text_cifrado = text_cifrado + str(abc[modulo])
 
     return text_cifrado
-
 
 def cocencode():
     banner("""CIPHER OF CESAR""")
@@ -389,7 +353,6 @@ def cocencode():
         print("\n")
         time.sleep(2)
         cocencode()
-
 
 def cocdecode():
     banner("""CIPHER OF CESAR""")
@@ -407,7 +370,6 @@ def cocdecode():
         cocdecode()
 
  ################## md2 ######################
-
 def md2():
   banner("""MD2""")
   text = str(input("\033[1;32m [+] TEXT TO MD2 : "))
@@ -419,7 +381,6 @@ def md2():
   re("\033[31m [+] Do a another decode (y/n) ? ", cocdecode)
 
 ############## md4 ##############################
-
 def md4():
   banner("""MD4""")
   text = str(input("\033[1;32m [+] TEXT TO MD2 : "))
@@ -471,7 +432,6 @@ def sha3512():
   re("\033[31m [+] Do a another decode (y/n) ? ", cocdecode)
 
 #################### base32 ############################
-
 def base32():
     banner("""BASE64""")
     print("\033[1;32m [+] Choose a Option : \n")
@@ -485,7 +445,6 @@ def base32():
     else:
         base32()
 
-
 def base32encode():
     banner("""BASE64""")
     text = input("\033[1;32m [+] Text To  BASE64 : ")
@@ -494,7 +453,6 @@ def base32encode():
     print("\033[1;32m [+] Result : " + b32e)
     print("\n")
     re("\033[31m [+] Do a another encode (y/n) ? ", base32encode)
-
 
 def base32decode():
     banner("""BASE32""")
@@ -512,7 +470,6 @@ def base32decode():
         base32decode()
 
 #################### base32 ############################
-
 def base58():
     banner("""BASE58""")
     print("\033[1;32m [+] Choose a Option : \n")
@@ -526,7 +483,6 @@ def base58():
     else:
         base58()
 
-
 def base58encode():
     banner("""BASE58""")
     text = input("\033[1;32m [+] Text To  BASE58 : ")
@@ -535,7 +491,6 @@ def base58encode():
     print("\033[1;32m [+] Result : " + base58s)
     print("\n")
     re("\033[31m [+] Do a another encode (y/n) ? ", base58encode)
-
 
 def base58decode():
     banner("""BASE58""")
@@ -552,10 +507,7 @@ def base58decode():
         time.sleep(2)
         base58decode()
 
-
 ########################### REVERSE ###########################
-
-
 def reverse():
     banner("""REVERSE""")
     print("\033[1;32m [+] Choose a Option : \n")
@@ -567,7 +519,6 @@ def reverse():
     if option == "2" or option == "02":
         revdecode()
 
-
 def revencode():
     banner("""REVERSE""")
     text = input("\033[1;32m [+] TEXT TO REVERSE : ")
@@ -575,7 +526,6 @@ def revencode():
     print("\033[1;32m [+] Result : " + text[::-1])
     print("\n")
     re("\033[31m [+] Do a another encode (y/n) ? ", revencode)
-
 
 def revdecode():
     banner("""REVERSE""")
