@@ -28,6 +28,15 @@
 * Encode|Decode HEXADECIMAL
 * Encode|Decode REVERSE
 
+## Newly Added
+
+* MD2
+* MD4
+* SHA3-224
+* SHA3-256
+* SHA3-512
+
+
 ## TESTED PLATFORMS : <img src="https://img.icons8.com/fluency/48/000000/hashtag.png"/>
 
 * Kali Linux
